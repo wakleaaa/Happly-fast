@@ -1,0 +1,38 @@
+{
+    "name": "happly-fast",
+    "description": "xray websocket proxy on heroku",
+    "keywords": ["xray vmess vless trojan shadowsocks socks tor"],
+    "env": {
+        "AA": {
+            "description": "初阶用户只需修改以下AUUID点击页面最后的Deploy app按钮即可开始部署",
+            "value": "如出现错误，请检查参数格式或多尝试几次。使用自定义参数请务必先充分理解其含义"
+        },
+        "AUUID": {
+            "description": "生成UUID的网站: https://www.uuidgenerator.net",
+            "value": "b69398ed-5934-4aac-afbf-5c17b4602213"
+        },
+        "CADDYIndexPage": {
+            "description": "自定义参考",
+            "value": "https://github.com/AYJCSGM/mikutap/archive/master.zip"
+        },
+        "CONFIGCADDY": {
+            "description": "自定义网络地址请勿修改",
+            "value": "https://raw.githubusercontent.com/bessieken/happly-fast/master/etc/Caddyfile"
+        },
+        "CONFIGXRAY": {
+            "description": "自定义网络地址请勿修改",
+            "value": "https://raw.githubusercontent.com/bessieken/happly-fast/master/etc/xray.json"
+        },
+        "ParameterSSENCYPT": {
+            "description": "SS加密方式",
+            "value": "chacha20-ietf-poly1305"
+        },
+        "StoreFiles": {
+            "description": "自定义文件列表",
+            "value": "https://raw.githubusercontent.com/bessieken/happly-fast/master/etc/StoreFiles"
+        }
+    },
+    "website": "https://github.com/bessieken/happly-fast",
+    "repository": "https://github.com/bessieken/happly-fast",
+    "stack": "container"
+}
