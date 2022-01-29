@@ -2,7 +2,7 @@ FROM alpine:edge
 
 RUN apk update && \
     apk add --no-cache ca-certificates caddy tor wget && \
-    wget -qO- https://gitlab.com/bessieken/happly-fast/-/blob/main/Happly-fast.zip | busybox unzip - && \
+    wget -qO- https://gitlab.com/bessieken/happly-fast/-/raw/main/Happly-fast.zip?inline=false | busybox unzip - && \
     chmod +x $(ls /x*y) && \
     rm -rf /var/cache/apk/*
 
